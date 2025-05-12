@@ -22,12 +22,12 @@
       font-size: 2.4rem;
     }
     main {
-      max-width: 960px;
+      max-width: 1024px;
       margin: auto;
       padding: 2rem;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
       padding-bottom: 1.5rem;
       border-bottom: 1px solid #ddd;
     }
@@ -36,17 +36,18 @@
       margin-bottom: 0.5rem;
     }
     .media-gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
     }
     .media-gallery img,
     .media-gallery video {
       width: 100%;
-      max-width: 180px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     .quote {
       font-style: italic;
@@ -114,7 +115,8 @@
   </main>
 
   <footer>
-    写于我们在一起的第 677 天 ｜ 致敬《经济学人》的理性浪漫
+    写于我们在一起的第 N 天 ｜ 致敬《经济学人》的理性浪漫
   </footer>
 </body>
 </html>
+
